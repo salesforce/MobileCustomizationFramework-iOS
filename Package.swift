@@ -30,8 +30,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MobileCustomizationFramework",
-            url: "https://github.com/salesforce/MobileCustomizationFramework-iOS/releases/download/6.1.4/MobileCustomizationFramework.xcframework.zip",
-            checksum: "964978a88aa77af6361587d17db88ff9fd79bff0713b58a771df946990e2e489"
+            url: "https://github.com/salesforce/MobileCustomizationFramework-iOS/releases/download/6.3.1/MobileCustomizationFramework.xcframework.zip",
+            checksum: "d49896f11c292ae3d6e1798ad544830c0dc1ee5b1be56152ecf5560d8da6d359"
         ),
         .target(
             name: "MobileCustomizationFrameworkTarget",
