@@ -21,17 +21,21 @@ let package = Package(
             name: "MobileCustomizationFramework",
             targets: ["MobileCustomizationFrameworkTarget"]
         ),
+        .library(
+            name: "MobileCustomizationHXL",
+            targets: ["MobileCustomizationHXLTarget"]
+        ),
     ],
     dependencies: [
-        .package(url: "https://github.com/salesforce/SLDSIcons-iOS.git", from: "1.2.0"),
-        .package(url: "https://github.com/salesforce/SharedUI-iOS.git", from: "1.2.0"),
+        .package(url: "https://github.com/salesforce/SLDSIcons-iOS.git", from: "1.2.5"),
+        .package(url: "https://github.com/salesforce/SharedUI-iOS.git", from: "1.5.6"),
         .package(url: "https://github.com/forcedotcom/SalesforceMobileInterfaces-iOS.git", from: "1.0.0"),
     ],
     targets: [
         .binaryTarget(
             name: "MobileCustomizationFramework",
-            url: "https://github.com/salesforce/MobileCustomizationFramework-iOS/releases/download/6.4.5/MobileCustomizationFramework.xcframework.zip",
-            checksum: "4020631bfa0a72d3dc8c714e1f36f0d469dcef59389a228abea7b13e5581b079"
+            url: "https://github.com/salesforce/MobileCustomizationFramework-iOS/releases/download/6.5.3/MobileCustomizationFramework.xcframework.zip",
+            checksum: "5befb326880383b6563259bbfd9b17a25575dd8dcf605658e10d9bdf4a13245f"
         ),
         .target(
             name: "MobileCustomizationFrameworkTarget",
@@ -46,6 +50,19 @@ let package = Package(
                 .product(name: "SalesforceCache", package: "SalesforceMobileInterfaces-iOS"),
             ],
             path: "Sources/MobileCustomizationFrameworkTarget"
+        ),
+        .binaryTarget(
+            name: "MobileCustomizationHXL",
+            url: "https://github.com/salesforce/MobileCustomizationFramework-iOS/releases/download/6.5.3/MobileCustomizationHXL.xcframework.zip",
+            checksum: "e1fae64d73ed988e82f797fe5c464394fa46b9f1341f6b9c13901f3ecff5cba1"
+        ),
+        .target(
+            name: "MobileCustomizationHXLTarget",
+            dependencies: [
+                "MobileCustomizationHXL",
+                "MobileCustomizationFrameworkTarget",
+            ],
+            path: "Sources/MobileCustomizationHXLTarget"
         ),
     ],
     swiftLanguageVersions: [.v5]
