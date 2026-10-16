@@ -28,14 +28,14 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/salesforce/SLDSIcons-iOS.git", from: "1.2.7"),
-        .package(url: "https://github.com/salesforce/SharedUI-iOS.git", from: "1.6.10"),
-        .package(url: "https://github.com/forcedotcom/SalesforceMobileInterfaces-iOS.git", from: "1.0.0"),
+        .package(url: "https://github.com/salesforce/SharedUI-iOS.git", from: "1.6.14"),
+        .package(url: "https://github.com/forcedotcom/SalesforceMobileInterfaces-iOS.git", from: "1.1.0"),
     ],
     targets: [
         .binaryTarget(
             name: "MobileCustomizationFramework",
-            url: "https://github.com/salesforce/MobileCustomizationFramework-iOS/releases/download/6.5.33/MobileCustomizationFramework.xcframework.zip",
-            checksum: "390938490968d3c4674f70050a36ab95d5c19de79cffcfd7e2d8f42ff8342903"
+            url: "https://github.com/salesforce/MobileCustomizationFramework-iOS/releases/download/6.5.41/MobileCustomizationFramework.xcframework.zip",
+            checksum: "05fbb6833f2b70a5aa3d90bd721c142166f267e2ff0996207e94df5c2078a4b8"
         ),
         .target(
             name: "MobileCustomizationFrameworkTarget",
@@ -53,8 +53,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "MobileCustomizationHXL",
-            url: "https://github.com/salesforce/MobileCustomizationFramework-iOS/releases/download/6.5.33/MobileCustomizationHXL.xcframework.zip",
-            checksum: "04c52885829c4d8747fcd374238e997ddb995355ff2d476d907d564060d0507b"
+            url: "https://github.com/salesforce/MobileCustomizationFramework-iOS/releases/download/6.5.41/MobileCustomizationHXL.xcframework.zip",
+            checksum: "37df5c1223855a1fffd5f689f6a251f6d24dcefbc212f3bc2b33a566f60b026c"
         ),
         .target(
             name: "MobileCustomizationHXLTarget",
